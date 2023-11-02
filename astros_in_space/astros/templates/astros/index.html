@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Austros in Space</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <div class="landing">
+        <h1 class="heading">𝕹𝖚𝖒𝖇𝖊𝖗 𝖔𝖋 𝕬𝖚𝖘𝖙𝖗𝖔𝖓𝖆𝖚𝖙𝖘 𝖎𝖓 𝖘𝖕𝖆𝖈𝖊:</h1>
+        <!-- <h2>API CALL: <i><u>{{message}}</u></i></h2> -->
+        <h3 class="number">{{number}}</h3>
+    </div>
+    <div class="sep">AT THE STATION ...</div>
+    <div class="content">
+        {% for person, image_url in people_with_images %}
+        <div class="austro">
+            <div class="austro-img-container">
+                <img class="profile-p" src="{{ image_url }}" alt="" srcset="">
+            </div>
+            <div class="austro-name">{{ person.name}}</div>
+            <div class="austro-craft"><b>Craft: </b><b class="spc"></b><i>{{ person.craft}}</i></div>
+        </div>
+        {% endfor %}
+    </div> 
+    <footer>
+        Copyright &copy; DjangoCon Africa 2023
+    </footer> 
+</body>
+</html>
