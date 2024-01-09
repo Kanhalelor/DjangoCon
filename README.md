@@ -43,3 +43,9 @@
 - Answering participant questions and addressing any concerns
 - Summarizing key takeaways and reinforcing important concepts
 - Providing additional resources and references for continued learning
+  
+---
+---
+
+### AND FINALLY
+![post workshop vibes](./assets/workshop.jpeg)
